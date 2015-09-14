@@ -1,0 +1,33 @@
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body    
+    +sliderbg('body', 'site/img/diseno_imagen1.jpg')
+    .container
+      a(href="index.html").col3.col-m4.push-m4#logo
+        .img(data-sr)
+          img(src='site/img/logo.png', alt="Alex Courcelle").w100
+      .col9.col-m12
+        nav: +menu('diseno', menu, 'horizontal', 0, 0, '', {'data-sr':true})
+    .container.innerCont
+    
+      .col6.col-t12.col-m12
+        h2 Le doy vida a tu proyecto con diseño y desarrollos digitales.
+        p Soy el indicado para desarrollar tu imagen corporativa y cualquier elemento que necesites para potenciar tu idea o negocio y presentarlo con la calidad que se merece.
+        p Revisa el portafolio de clientes que ya han sido parte de estos servicios:
+        
+      - var imgs = []
+      - imgs.push('site/img/p1.jpg')
+      - imgs.push('site/img/p2.jpg')
+      - imgs.push('site/img/p3.jpg')
+      - imgs.push('site/img/p4.jpg')
+      - imgs.push('site/img/p5.jpg')
+      - imgs.push('site/img/p6.jpg')
+
+      - each i in imgs
+        a(href="#{i}", style="background-image:url(#{i})").box.col3.col-m6.port
+          i.fa.fa-camera 
+
+    +footer
+    +scripts

@@ -1,0 +1,40 @@
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body    
+    +sliderbg('body', 'site/img/fotovideo_imagen1.jpg')
+    .container
+      a(href="index.html").col3.col-m4.push-m4#logo
+        .img(data-sr)
+          img(src='site/img/logo.png', alt="Alex Courcelle").w100
+      .col9.col-m12
+        nav: +menu('foto-video', menu, 'horizontal', 0, 0, '', {'data-sr':true})
+    .container.innerCont
+    
+      .col6.col-t12.col-m12
+        h2 Capturo la escencia de cada momento.
+        p Me encargo de plasmar toda la experiencias de tu evento en fotografía y video para que mantengas vivo el recuerdo por siempre. Ya sea un evento social o corporativo estoy listo para cubrir ese puesto tan importante.
+        p Te invito a que conozcas mi trabajo y me permitas ser parte de ese momento especial.
+        
+      - var imgs = []
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+      - imgs.push('http://placehold.it/600x400')
+
+      - each i in imgs
+        a(href="#{i}", style="background-image:url(#{i})").box.col3.col-m6.port
+          i.fa.fa-camera
+    
+    
+        
+    +footer    
+    +scripts

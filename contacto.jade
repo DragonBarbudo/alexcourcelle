@@ -1,0 +1,22 @@
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body    
+    +sliderbg('body', 'site/img/contacto_imagen1.jpg')
+    .container
+      a(href="index.html").col3.col-m4.push-m4#logo
+        .img(data-sr)
+          img(src='site/img/logo.png', alt="Alex Courcelle").w100
+      .col9.col-m12
+        nav: +menu('contacto', menu, 'horizontal', 0, 0, '', {'data-sr':true})
+    .container.innerCont
+      .col6.col-t12.col-m12
+        h2 Contáctame y platicame lo que necesitas.
+        p Puedes encontrarme en el teléfono <strong>55-5555-5555</strong>, envíame un mensaje al correo <a href="mailto:contacto@alexcourcelle.com">contacto@alexcourcelle.com</a> o llena el formulario de contacto y te regresaré una respuesta lo antes posible.    
+      .col6.col-t12.col-m12.form
+        +formSimple('para@quien.com', 'de@quien.com', 'Asunto del correo')
+      
+      
+    +footer        
+    +scripts

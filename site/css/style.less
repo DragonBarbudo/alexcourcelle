@@ -1,0 +1,390 @@
+@import '../../dw/dw.less';
+//CONTAINER WIDTHS:
+@containerWidth: 960px;
+@containerWidthTablet: 480px;
+
+@b: #222;
+@w: #f5f5f5;
+@wT: rgba(255,255,255,0.6);
+@main: #594A69;
+@mainT: rgba(89,74,105, 0.9);
+@sec: #A5E8D6;
+@secT: rgba(165,232,214, 0.9);
+
+
+.font{font-family: 'Lato', sans-serif;}
+
+body{
+  .font;
+}
+#logo{
+    background:@main;
+  padding: 20px;
+  @media @tablet, @mobile{ padding: 5px; }
+  .box-sizing(border-box);
+  .img{
+    margin: 5px 20px;
+    @media @tablet, @mobile{ margin: 5px; }
+  }
+}
+
+
+nav{
+  margin-top: 20px;
+  &>ul.listMain{
+    &>li{
+      &>a{
+        display: block;
+        padding: 10px 0;
+        background: @main;
+        color:@w;
+        text-align: center;
+        position: relative;
+        
+        @media @tablet, @mobile{ font-size: 0.8em; }
+        
+        &:hover, &.active{
+          background: @sec;
+          color:@main;
+        }
+        &:before{
+          content:"";
+          background: @wT;
+          position: absolute;
+          width: 100%;
+          height: 20px;
+          top: -20px;
+          left: 0;
+          @media @mobile{display: none;}
+        }
+      }
+    }
+  }
+}
+
+
+
+.servicios, .diseno{
+  background-image: url(../img/home_serv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  margin-top: 20px;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 6px solid @main/1.6;
+  div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .box-sizing(border-box);
+    font-weight: bold;
+    text-align: center;
+    background: @mainT;
+    color:@w;
+    font-size: 1.4em;
+    padding: 20px 10px;
+    text-decoration: none;
+    @media @tablet{ font-size: 0.9em; bottom:30%;}
+    @media @mobile{ font-size: 0.7em; bottom:30%;}
+    i{
+      display: block;
+      color:@sec;
+      font-size: 2em;
+      padding: 10px;
+    }
+  }
+  &:hover{
+    div{
+      i{color:@main/1.8;}
+      background: @wT;
+      color:@main;
+    }
+  }
+}
+.diseno{
+  background-image: url(../img/home_dis.jpg);
+  background-position: right;
+}
+
+
+.col12#texto_intro{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4em;
+  text-align: left;
+  height: 320px;
+  margin-top:20px;
+  background-image: url(../img/cuento.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+} 
+
+#texto1{
+  display: inline-block;
+ margin-top: 70px;
+ font-size: 1.8em;
+  background: @mainT;
+  padding: 10px 20px;
+  color:@sec;
+  margin-left: -10px;
+  @media @tablet, @mobile{ font-size: 1em; margin-top: 10px; }
+}
+#texto2{
+  display: inline-block;
+ font-size: 1.1em;
+ color:@main;
+ background: @secT;
+ margin-left: -20px;
+  padding: 10px 20px;
+  @media @tablet{ font-size: 0.9em; }
+  @media @mobile{ font-size: 0.8em; }
+}
+#texto3{
+  display: inline-block;
+ font-size: 1.4em;
+ background: @mainT;
+  padding: 10px 20px;
+  color:@sec;
+  margin-left: -10px; 
+}
+#proyectos{
+    background:@main;
+    height: 170px;
+}
+#sec_proyectos{
+    width: 440px;
+    height: 35px;
+    margin-left: 10px;
+    border-bottom:1px solid #ffffff;
+}
+#name_proyectos{
+    width: 440px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: aliceblue;
+    font-size: 1.2em;
+}
+.proyecto{
+    margin-top: 5px;
+    background: #fff;
+    height: 110px;
+    width: 136px;
+    margin-left: 10px;
+}
+#sec_formulario{
+    background:@main;
+    height: 350px;
+    margin-top: 100px;
+}
+#sec_diseno{
+    background:@main;
+    margin-top: 100px;
+}
+#sec_video{
+    background:@main;
+    margin-top: 100px;
+}
+#sec_foto{
+    background:@main;
+    margin-top: 100px;
+    height: 450px;
+}
+#retratos{
+    margin-top: 10px;
+    height: 30px;
+    width: 600px;
+    margin-left: 10px;
+    border-bottom:1px solid #ffffff; 
+}
+#titulo_retratos{
+    font-size: 1.2em;
+    color:#fff;
+}
+#sec_retratos{
+    background:#fff;
+    margin-top: 20px;
+    height: 350px;
+    width: 500px;
+}
+#sec_foto2{
+    background:@main;
+    margin-top: 50px;
+    height: 430px;
+}
+#eventos{
+    margin-top:10px;
+    height: 30px;
+    width: 850px;
+    margin-left: 10px;
+    border-bottom:1px solid #ffffff; 
+}
+#titulo_eventos{
+    font-size: 1.2em;
+    color:#fff;
+}
+#sec_eventos{
+    background:#fff;
+    margin-top: 20px;
+    height:350px;
+    width:700px;
+}
+
+
+
+
+footer{
+  margin-top: 20px;
+  background: @main/1.8;
+  color:@w;
+  .container{
+    padding: 20px 0;
+    @media @mobile{
+      padding: 10px 0;
+    }
+  }
+  ul{
+    margin-top: 30px;
+    @media @mobile{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .clearfix;
+    }
+    li{
+      a{
+        color:@w;
+        text-decoration: none;
+        font-size: 0.7em;
+        text-align: center;
+      }
+    }
+  }
+  .logoFooter{
+    max-width: 100%;
+    text-align: center;
+    height: 70px;
+    overflow: hidden;
+    @media @mobile{
+      height: 50px;
+    }
+    img{
+      max-width: 150px;
+      width: 100%;
+      @media @mobile{
+        max-width: 100px;
+      }
+    }
+  }
+  address{
+    font-style: normal;
+    font-size: 0.8em;
+    text-align: right;
+    @media @mobile{
+      text-align: center;
+      font-size: 0.7em;
+    }
+    p{
+      a{
+        color: @main*1.8;
+        text-decoration: none;
+        &:hover{
+          color: @sec;
+        }
+      }
+    }
+  }
+}
+
+
+.port{
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-bottom: 4px solid @main/1.8;
+  i{
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    color:@main;
+    text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    .transition(600ms);
+  }
+  &:hover{
+    i{
+      color: @sec;
+      text-shadow: none;
+      font-size: 2em;
+      margin-top: 70px;
+      .transition(300ms);
+    }
+  }
+}
+
+
+.innerCont{
+  h2{
+    background: @secT;
+    padding: 20px;
+    color:@main;
+    font-size: 1.6em;
+    margin-top: 20px;
+    text-align: center;
+  }
+  p{
+    padding: 20px;
+    background: @mainT;
+    color: @w;
+    
+  }
+  a{
+    color: @sec;
+  }
+}
+
+.form{
+  background: @mainT;
+  margin-top: 20px;
+  input,textarea{
+    border:none;
+    background: @sec;
+    .font;
+    color:@main;
+    padding: 5px;
+    font-size: 14px;
+  }
+  label{
+    color:@w;
+    margin: 5px 0;
+    font-family: 0.8em;
+  }
+  button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: @main/1.8;
+    color:@w;
+    border:none;
+    .font;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover{
+      background: @w;
+      color: @main;
+    }
+  }
+}
+
+
+#swipebox-overlay{
+  background: @secT;
+}
+#swipebox-bottom-bar{
+  background: @mainT;
+}

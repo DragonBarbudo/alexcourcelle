@@ -1,0 +1,42 @@
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body    
+    +sliderbg('body', 'site/img/imagen1.jpg', 'site/img/imagen2.jpg', 'site/img/imagen3.jpg')
+    .container
+      a(href="index.html").col3.col-m4.push-m4#logo
+        .img(data-sr)
+          img(src='site/img/logo.png', alt="Alex Courcelle").w100
+      .col9.col-m12
+        nav: +menu('index', menu, 'horizontal', 0, 0, '', {'data-sr':true})
+    .container
+        .col12#texto_intro
+            div#texto1(data-sr="enter left") Cuento historias con imágenes 
+            div#texto2(data-sr="enter right") retratando memorias como experiencias vivas. 
+            //div#texto3(data-sr="enter left") captando la esencia de cada momento.
+    
+    
+    //.container
+        .col6.push1#proyectos
+            div#sec_proyectos
+                div#name_proyectos
+                    p Últimos proyectos
+            .container
+                .col4.proyecto
+                .col4.proyecto
+                .col4.proyecto        
+        .col5
+    .container
+      a(href="foto-video.html", data-sr="enter left").col6.col-m10.push-m1.servicios
+        div
+          i.fa.fa-camera-retro
+          span FOTOGRAFÍA Y VIDEO
+      a(href="diseno.html", data-sr="enter right").col6.col-m10.push-m1.diseno
+        div
+          i.fa.fa-desktop
+          span DISEÑO Y DESARROLLO WEB
+    
+    +footer
+            
+    +scripts
