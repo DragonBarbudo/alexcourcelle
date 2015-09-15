@@ -18,20 +18,27 @@ include site/_config.jade
         p Te invito a que conozcas mi trabajo y me permitas ser parte de ese momento especial.
         
       - var imgs = []
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
-      - imgs.push('http://placehold.it/600x400')
+      - imgs.push(['site/img/fotos/1.jpg', 'center'])
+      - imgs.push(['site/img/fotos/2.jpg', 'center'])
+      - imgs.push(['site/img/fotos/3.jpg', 'center'])
+      - imgs.push(['site/img/fotos/4.jpg', 'center'])
+      - imgs.push(['site/img/fotos/5.jpg', 'center'])
+      - imgs.push(['site/img/fotos/6.jpg', 'center'])
+      - imgs.push(['site/img/fotos/7.jpg', 'center'])
+      - imgs.push(['site/img/fotos/8.jpg', 'center'])
+      - imgs.push(['site/img/fotos/9.jpg', 'center'])
+      - imgs.push(['site/img/fotos/10.jpg', 'center'])
+      - imgs.push(['site/img/fotos/11.jpg', 'center'])
+      - imgs.push(['site/img/fotos/12.jpg', 'center'])
+      - imgs.push(['site/img/fotos/13.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/14.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/15.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/16.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/17.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/18.jpg', 'top center'])
 
       - each i in imgs
-        a(href="#{i}", style="background-image:url(#{i})").box.col3.col-m6.port
+        a(href="#{i[0]}", style="background-image:url(#{i[0]}); background-position:#{i[1]}").box.col3.col-m6.port
           i.fa.fa-camera
     
     
