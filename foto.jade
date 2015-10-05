@@ -1,0 +1,55 @@
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body    
+  header#FondoCompleto
+    .container#cabezal
+      a(href="index.html").col3.col-m4.push-m4#logo
+        .img(data-sr)
+          img(src='site/img/logo2.png', alt="Alex Courcelle").w100
+      .col5
+        div#texto_header Alex Courcell
+          div#texto_header2 Fotografía y Video
+      .col4
+        div#img_header
+          img(src='site/img/fotografo.png', alt="Alex")
+   menu#FondoCompleto      
+    .container  
+        .col12.col-m12
+            nav: +menu('index', menu, 'horizontal', 0, 0, '', {'data-sr':true})
+    .container.innerCont
+    
+      .col6.col-t12.col-m12
+        h2 Capturo la escencia de cada momento.
+        p Me encargo de plasmar toda la experiencias de tu evento en fotografía y video para que mantengas vivo el recuerdo por siempre. Ya sea un evento social o corporativo estoy listo para cubrir ese puesto tan importante.
+        p Te invito a que conozcas mi trabajo y me permitas ser parte de ese momento especial.
+        
+      - var imgs = []
+      - imgs.push(['site/img/fotos/1.jpg', 'center'])
+      - imgs.push(['site/img/fotos/2.jpg', 'center'])
+      - imgs.push(['site/img/fotos/3.jpg', 'center'])
+      - imgs.push(['site/img/fotos/4.jpg', 'center'])
+      - imgs.push(['site/img/fotos/5.jpg', 'center'])
+      - imgs.push(['site/img/fotos/6.jpg', 'center'])
+      - imgs.push(['site/img/fotos/7.jpg', 'center'])
+      - imgs.push(['site/img/fotos/8.jpg', 'center'])
+      - imgs.push(['site/img/fotos/9.jpg', 'center'])
+      - imgs.push(['site/img/fotos/10.jpg', 'center'])
+      - imgs.push(['site/img/fotos/11.jpg', 'center'])
+      - imgs.push(['site/img/fotos/12.jpg', 'center'])
+      - imgs.push(['site/img/fotos/13.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/14.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/15.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/16.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/17.jpg', 'top center'])
+      - imgs.push(['site/img/fotos/18.jpg', 'top center'])
+
+      - each i in imgs
+        a(href="#{i[0]}", style="background-image:url(#{i[0]}); background-position:#{i[1]}").box.col3.col-m6.port
+          i.fa.fa-camera
+    
+    
+        
+    +footer    
+    +scripts

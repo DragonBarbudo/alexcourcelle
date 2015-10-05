@@ -204,25 +204,25 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/foto-video.jade": {
+	"\/foto.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/foto.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/foto.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/foto-video.jade",
-		"outputAbbreviatedPath": "\/foto-video.html",
+		"inputAbbreviatedPath": "\/foto.jade",
+		"outputAbbreviatedPath": "\/foto.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/fotografia.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/fotografia.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -293,6 +293,39 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/site\/img\/background_footer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16573,
+		"inputAbbreviatedPath": "\/site\/img\/background_footer.png",
+		"outputAbbreviatedPath": "\/site\/img\/background_footer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/background_header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3731,
+		"inputAbbreviatedPath": "\/site\/img\/background_header.png",
+		"outputAbbreviatedPath": "\/site\/img\/background_header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/background_menu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2824,
+		"inputAbbreviatedPath": "\/site\/img\/background_menu.png",
+		"outputAbbreviatedPath": "\/site\/img\/background_menu.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/img\/contacto_imagen1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -326,6 +359,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/site\/img\/facebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1249,
+		"inputAbbreviatedPath": "\/site\/img\/facebook.png",
+		"outputAbbreviatedPath": "\/site\/img\/facebook.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/fotografo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28823,
+		"inputAbbreviatedPath": "\/site\/img\/fotografo.png",
+		"outputAbbreviatedPath": "\/site\/img\/fotografo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/img\/fotos\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -352,7 +407,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 43782,
+		"initialSize": 70496,
 		"inputAbbreviatedPath": "\/site\/img\/fotos\/11.jpg",
 		"outputAbbreviatedPath": "\/site\/img\/fotos\/alex12.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -667,6 +722,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/site\/img\/in.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1435,
+		"inputAbbreviatedPath": "\/site\/img\/in.png",
+		"outputAbbreviatedPath": "\/site\/img\/in.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -674,6 +740,17 @@
 		"initialSize": 3676,
 		"inputAbbreviatedPath": "\/site\/img\/logo.png",
 		"outputAbbreviatedPath": "\/site\/img\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/logo2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2081,
+		"inputAbbreviatedPath": "\/site\/img\/logo2.png",
+		"outputAbbreviatedPath": "\/site\/img\/logo2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -744,6 +821,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/site\/img\/twit.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1400,
+		"inputAbbreviatedPath": "\/site\/img\/twit.png",
+		"outputAbbreviatedPath": "\/site\/img\/twit.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/youtube.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1139,
+		"inputAbbreviatedPath": "\/site\/img\/youtube.png",
+		"outputAbbreviatedPath": "\/site\/img\/youtube.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/js\/script.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -754,6 +853,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/video.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/video.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/video.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/video.jade",
+		"outputAbbreviatedPath": "\/video.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		}
 	},
 "hooks": [

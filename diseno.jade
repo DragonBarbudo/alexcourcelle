@@ -3,13 +3,21 @@ include site/_config.jade
 +html5
   +head(title, stylesheets, keywords, description)
   body    
-    +sliderbg('body', 'site/img/diseno_imagen1.jpg')
-    .container
+  header#FondoCompleto
+    .container#cabezal
       a(href="index.html").col3.col-m4.push-m4#logo
         .img(data-sr)
-          img(src='site/img/logo.png', alt="Alex Courcelle").w100
-      .col9.col-m12
-        nav: +menu('diseno', menu, 'horizontal', 0, 0, '', {'data-sr':true})
+          img(src='site/img/logo2.png', alt="Alex Courcelle").w100
+      .col5
+        div#texto_header Alex Courcell
+          div#texto_header2 Fotografía y Video
+      .col4
+        div#img_header
+          img(src='site/img/fotografo.png', alt="Alex")
+   menu#FondoCompleto      
+    .container  
+        .col12.col-m12
+            nav: +menu('index', menu, 'horizontal', 0, 0, '', {'data-sr':true})
     .container.innerCont
     
       .col6.col-t12.col-m12

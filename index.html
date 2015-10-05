@@ -9,28 +9,39 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Allura">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.1/css/swipebox.min.css">
     <link rel="stylesheet" href="site/css/style.css">
   </head>
-  <body>   
-    <div data="body" class="bgslider">
-      <div data="site/img/imagen1.jpg"></div>
-      <div data="site/img/imagen2.jpg"></div>
-      <div data="site/img/imagen3.jpg"></div>
+  <body></body>
+  <header id="FondoCompleto">
+    <div id="cabezal" class="container"><a href="index.html" id="logo" class="col3 col-m4 push-m4">
+        <div data-sr class="img"><img src="site/img/logo2.png" alt="Alex Courcelle" class="w100"></div></a>
+      <div class="col5">
+        <div id="texto_header">Alex Courcell
+          <div id="texto_header2">Fotografía y Video</div>
+        </div>
+      </div>
+      <div class="col4">
+        <div id="img_header"><img src="site/img/fotografo.png" alt="Alex"></div>
+      </div>
     </div>
-    <div class="container"><a href="index.html" id="logo" class="col3 col-m4 push-m4">
-        <div data-sr class="img"><img src="site/img/logo.png" alt="Alex Courcelle" class="w100"></div></a>
-      <div class="col9 col-m12">
+  </header>
+  <menu id="FondoCompleto">     
+    <div class="container"> 
+      <div class="col12 col-m12">
         <nav>
           <ul class="listMain horizontal">
-            <li class="col3"><a href="index.html" class="active " data-sr>Inicio</a>
+            <li class="col2"><a href="index.html" class="active " data-sr>Inicio</a>
             </li>
-            <li class="col3"><a href="foto-video.html" data-sr>Foto y video</a>
+            <li class="col2"><a href="foto.html" data-sr>Portafolio</a>
             </li>
-            <li class="col3"><a href="diseno.html" data-sr>Diseño digital</a>
+            <li class="col2"><a href="video.html" data-sr>Video</a>
             </li>
-            <li class="col3"><a href="contacto.html" data-sr>Contacto</a>
+            <li class="col2"><a href="diseno.html" data-sr>Diseño digital</a>
+            </li>
+            <li class="col2"><a href="contacto.html" data-sr>Contacto</a>
             </li>
           </ul>
         </nav>
@@ -41,47 +52,23 @@
         <div id="texto1" data-sr="enter left">Cuento historias con imágenes </div>
         <div id="texto2" data-sr="enter right">retratando memorias como experiencias vivas. </div>
         <!--div#texto3(data-sr="enter left") captando la esencia de cada momento.-->
-        
       </div>
     </div>
-    <!--.container
-    .col6.push1#proyectos
-        div#sec_proyectos
-            div#name_proyectos
-                p Últimos proyectos
-        .container
-            .col4.proyecto
-            .col4.proyecto
-            .col4.proyecto        
-    .col5
-    -->
-    <div class="container"><a href="foto-video.html" data-sr="enter left" class="col6 col-m10 push-m1 servicios">
-        <div><i class="fa fa-camera-retro"></i><span>FOTOGRAFÍA Y VIDEO</span></div></a><a href="diseno.html" data-sr="enter right" class="col6 col-m10 push-m1 diseno">
-        <div><i class="fa fa-desktop"></i><span>DISEÑO Y DESARROLLO WEB</span></div></a></div>
     <footer>
       <div class="container">
-        <div class="col4 col-m12">
-          <ul class="listMain horizontal">
-            <li class="col3"><a href="index.html">Inicio</a>
-            </li>
-            <li class="col3"><a href="foto-video.html">Foto y video</a>
-            </li>
-            <li class="col3"><a href="diseno.html">Diseño digital</a>
-            </li>
-            <li class="col3"><a href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <div id="arte" class="col4 col-m12">
+          <h1>Arte y Diseño Camila </h1>
         </div>
         <div class="col4 col-m12">
           <div class="logoFooter"><img src="site/img/logo.png" alt="Alex Courcelle"></div>
         </div>
         <div class="col4 col-m12">
-          <address>
-            <p>Alex Courcelle</p>
-            <p>Tel. <strong>555-5555-55</strong></p>
-            <p><a href="mailto:contacto@alexcourcelle.com">contacto@alexcourcelle.com</a></p>
-            <p>Los Cabos, Baja California, México.</p>
-          </address>
+          <div class="container">
+            <div class="col3"><img src="site/img/twit.png" alt="twit"></div>
+            <div class="col3"><img src="site/img/facebook.png" alt="face"></div>
+            <div class="col3"><img src="site/img/youtube.png" alt="Youtube"></div>
+            <div class="col3"><img src="site/img/in.png" alt="in"></div>
+          </div>
         </div>
       </div>
     </footer>
@@ -92,5 +79,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.3.2/scrollReveal.min.js"></script>
     <script src="site/js/script.js"></script>
-  </body>
+  </menu>
 </html>

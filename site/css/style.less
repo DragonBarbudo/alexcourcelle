@@ -3,40 +3,50 @@
 @containerWidth: 960px;
 @containerWidthTablet: 480px;
 
-@b: #222;
+@b: #000000;
 @w: #f5f5f5;
 @wT: rgba(255,255,255,0.6);
-@main: #594A69;
-@mainT: rgba(89,74,105, 0.9);
+@main: #161614;
+@mainT: #645e5e;
 @sec: #A5E8D6;
-@secT: rgba(165,232,214, 0.9);
+@secT: #ff5d4c;
 
 
 .font{font-family: 'Lato', sans-serif;}
 
 body{
   .font;
+  background: @main;
+}
+header{
+  background-image: url(../img/background_header.png);
+  height: 160px;
+}
+menu{
+  height: 50px;
+  background-image: url(../img/background_menu.png)
 }
 #logo{
-    background:@main;
   padding: 20px;
   @media @tablet, @mobile{ padding: 5px; }
   .box-sizing(border-box);
   .img{
-    margin: 5px 20px;
+    margin: 10px 20px;
     @media @tablet, @mobile{ margin: 5px; }
   }
 }
-
-
+#cabezal{
+    height: 160px;
+   
+  }
 nav{
-  margin-top: 20px;
+  margin-top: 10px;
   &>ul.listMain{
     &>li{
+        .col(12/5);
       &>a{
         display: block;
         padding: 10px 0;
-        background: @main;
         color:@w;
         text-align: center;
         position: relative;
@@ -44,25 +54,14 @@ nav{
         @media @tablet, @mobile{ font-size: 0.8em; }
         
         &:hover, &.active{
-          background: @sec;
+          background: @w;    
           color:@main;
         }
-        &:before{
-          content:"";
-          background: @wT;
-          position: absolute;
-          width: 100%;
-          height: 20px;
-          top: -20px;
-          left: 0;
-          @media @mobile{display: none;}
-        }
+
       }
     }
   }
 }
-
-
 
 .servicios, .diseno{
   background-image: url(../img/home_serv.jpg);
@@ -120,6 +119,31 @@ nav{
   background-repeat: no-repeat;
   background-position: right;
 } 
+#texto_header{
+ font-family: 'Allura', cursive;
+ display: inline-block;
+ margin-top: 30px;
+ font-size: 3.8em;
+  padding: 10px 20px;
+  color:@w;
+  float:right;
+  margin-left: -10px;
+  @media @tablet, @mobile{ font-size: 1em; margin-top: 10px; }
+}
+#texto_header2{
+ font-family: 'Lato', sans-serif;
+ text-align:right; 
+ font-size: 0.3em;
+ color:@w;
+ @media @tablet, @mobile{ font-size: 1em; margin-top: 10px; }
+}
+#arte{
+ font-family: 'Allura', cursive;
+ text-align:left; 
+ font-size: 2.4em;
+ color:@w;
+ @media @tablet, @mobile{ font-size: 1em; margin-top: 10px; }
+}
 
 #texto1{
   display: inline-block;
@@ -127,19 +151,24 @@ nav{
  font-size: 1.8em;
   background: @mainT;
   padding: 10px 20px;
-  color:@sec;
+  color:@w;
   margin-left: -10px;
   @media @tablet, @mobile{ font-size: 1em; margin-top: 10px; }
 }
 #texto2{
   display: inline-block;
  font-size: 1.1em;
- color:@main;
+ color:@w;
  background: @secT;
  margin-left: -20px;
   padding: 10px 20px;
   @media @tablet{ font-size: 0.9em; }
   @media @mobile{ font-size: 0.8em; }
+}
+#img_header{
+ position: absolute;
+  top: 0;
+  right: 0;
 }
 #texto3{
   display: inline-block;
@@ -237,7 +266,7 @@ nav{
 
 footer{
   margin-top: 20px;
-  background: @main/1.8;
+  background-image: url(../img/background_footer.png);
   color:@w;
   .container{
     padding: 20px 0;
@@ -328,16 +357,16 @@ footer{
 
 .innerCont{
   h2{
-    background: @secT;
+    background: @mainT;
     padding: 20px;
-    color:@main;
+    color:@w;
     font-size: 1.6em;
     margin-top: 20px;
     text-align: center;
   }
   p{
     padding: 20px;
-    background: @mainT;
+    background: @secT;
     color: @w;
     
   }
@@ -351,7 +380,7 @@ footer{
   margin-top: 20px;
   input,textarea{
     border:none;
-    background: @sec;
+    background: @w;
     .font;
     color:@main;
     padding: 5px;
@@ -364,9 +393,10 @@ footer{
   }
   button{
     display: block;
-    width: 100%;
+    float: right;
+    width: 60%;
     padding: 10px;
-    background: @main/1.8;
+    background: @secT;
     color:@w;
     border:none;
     .font;
@@ -388,3 +418,6 @@ footer{
 #swipebox-bottom-bar{
   background: @mainT;
 }
+
+
+
